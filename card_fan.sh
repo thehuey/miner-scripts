@@ -1,6 +1,6 @@
 #/bin/sh
-lvl=$( echo "$2 * 2.5" | bc | awk '{printf("%d\n", $1)}' )
-mon=$( echo "$1 + 1" | bc )
+lvl=$( echo "$2 * 2.55" | bc | awk '{printf("%d\n", $1)}' )
+#mon=$( echo "$1 + 1" | bc )
 echo "Setting card $1 fan to: $2% Value: $lvl"
 
 #for i in $(lspci -D |grep VGA |grep AMD |cut -f 1 -d' '|cut -f 1 -d'.'); 
